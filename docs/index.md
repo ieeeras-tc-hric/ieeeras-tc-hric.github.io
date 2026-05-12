@@ -34,8 +34,8 @@ The scope of the **TC HRI&C** is the development of methods, models, and systems
 <div class="hric-social-row" markdown>
 
 [:fontawesome-brands-x-twitter:{ .hric-social-icon } **X / Twitter**](https://x.com/IeeeS40766){ .hric-social-link }
-[:fontawesome-brands-linkedin:{ .hric-social-icon } **LinkedIn**](https://www.linkedin.com/in/ieee-ras-tc-hric-sr-ieee-ras-14a3b040a/){ .hric-social-link }
-[:fontawesome-brands-youtube:{ .hric-social-icon } **YouTube**](https://www.youtube.com/@IEEERASTCHRICSR){ .hric-social-link }
+[:fontawesome-brands-linkedin:{ .hric-social-icon } **LinkedIn**](https://www.linkedin.com/in/ieee-ras-tc-hric-14a3b040a/){ .hric-social-link }
+[:fontawesome-brands-youtube:{ .hric-social-icon } **YouTube**](https://www.youtube.com/@IEEERASTCHRIC){ .hric-social-link }
 
 </div>
 
