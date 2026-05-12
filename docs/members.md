@@ -52,7 +52,7 @@ The IEEE RAS TC on Human-Robot Interaction and Collaboration is led by a team of
 
     [:material-email: marcovincenzo.maselli@unifi.it](mailto:marcovincenzo.maselli@unifi.it)
 
--   ![Hochul Hwang](assets/bio/hochul.jpeg){ .hric-bio-avatar }
+-   ![Hochul Hwang](assets/bio/hochul.png){ .hric-bio-avatar }
 
     [__Hochul Hwang__](https://hchlhwang.github.io)
 
