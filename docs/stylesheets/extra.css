@@ -1,0 +1,169 @@
+/* TC HRI&C — small theme refinements on top of Material for MkDocs */
+
+:root,
+[data-md-color-scheme="default"],
+[data-md-color-primary="indigo"] {
+  --md-primary-fg-color:        #0a2540;
+  --md-primary-fg-color--light: #143a5e;
+  --md-primary-fg-color--dark:  #051528;
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+}
+
+:root,
+[data-md-color-scheme="default"],
+[data-md-color-accent="blue"] {
+  --md-accent-fg-color:         #BE3455;
+  --md-accent-fg-color--transparent: rgba(190, 52, 85, 0.1);
+  --md-typeset-a-color:         #BE3455;
+}
+
+/* Underline links on hover for clarity */
+.md-typeset a:hover {
+  text-decoration: underline;
+}
+
+/* Homepage compact intro — logo left, title/subtitle right */
+.hric-intro {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 0 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.hric-intro-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.md-typeset .hric-intro h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin: 0 0 0.4rem;
+}
+
+.md-typeset .hric-intro p,
+.md-typeset .hric-intro em {
+  color: var(--md-default-fg-color--light);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.md-typeset .hric-intro-logo,
+.md-typeset img.hric-intro-logo {
+  flex-shrink: 0;
+  width: 140px;
+  max-width: 140px;
+  height: auto;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .hric-intro {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+  .md-typeset .hric-intro-logo,
+  .md-typeset img.hric-intro-logo {
+    width: 110px;
+  }
+}
+
+/* Homepage social row */
+.md-typeset .hric-social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.md-typeset .hric-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  text-decoration: none !important;
+  color: var(--md-default-fg-color) !important;
+  background: var(--md-default-bg-color);
+  transition: border-color 120ms ease, transform 120ms ease, box-shadow 120ms ease;
+}
+
+.md-typeset .hric-social-link:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+}
+
+.md-typeset .hric-social-icon {
+  font-size: 1.25rem;
+  color: var(--md-primary-fg-color);
+}
+
+/* Slightly tighter card grids on member/social pages */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 0.5rem;
+  transition: border-color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+/* Header tweaks */
+.md-header {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Make the dark logo visible on the dark-navy header by inverting to white */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+}
+
+/* Footer social icons spacing */
+.md-social__link {
+  margin: 0 0.15rem;
+}
+
+/* Make tables a bit more readable */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: #fff;
+}
+
+/* Members page — circular bio avatars on cards */
+.md-typeset .hric-people > ul > li {
+  text-align: center;
+}
+
+.md-typeset .hric-bio-avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0.25rem auto 0.75rem;
+  border: 3px solid var(--md-default-fg-color--lightest);
+  background: var(--md-default-bg-color);
+}
+
+.md-typeset .hric-bio-avatar-placeholder {
+  font-size: 5rem;
+  display: block;
+  margin: 0.25rem auto 0.5rem;
+  color: var(--md-default-fg-color--lighter);
+  line-height: 1;
+}
+
+.md-typeset .hric-people strong {
+  font-size: 1.05rem;
+}
