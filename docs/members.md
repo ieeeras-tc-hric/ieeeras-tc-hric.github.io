@@ -12,6 +12,8 @@ The IEEE RAS TC on Human-Robot Interaction and Collaboration is led by a team of
 
     Hanyang University
 
+    [HumAn-Robot COllaboration Lab (HARCO Lab)](http://harco.hanyang.ac.kr)
+
     [:material-email: wansookim@hanyang.ac.kr](mailto:wansookim@hanyang.ac.kr)
 
 -   ![Marta Lorenzini](assets/bio/marta.jpeg){ .hric-bio-avatar }
@@ -20,6 +22,8 @@ The IEEE RAS TC on Human-Robot Interaction and Collaboration is led by a team of
 
     Istituto Italiano di Tecnologia (IIT)
 
+    [Human-Robot Interfaces and Interaction Lab (HRII Lab)](https://hri.iit.it)
+
     [:material-email: Marta.Lorenzini@iit.it](mailto:Marta.Lorenzini@iit.it)
 
 -   ![Laura Fiorini](assets/bio/laura.jpeg){ .hric-bio-avatar }
@@ -27,6 +31,8 @@ The IEEE RAS TC on Human-Robot Interaction and Collaboration is led by a team of
     [__Laura Fiorini__](https://www.abrlab.unifi.it/vp-4-people.html)
 
     Università degli Studi di Firenze
+
+    [Assistive Robotics Lab (ABR Lab)](https://www.abrlab.unifi.it)
 
     [:material-email: laura.fiorini@unifi.it](mailto:laura.fiorini@unifi.it)
 
