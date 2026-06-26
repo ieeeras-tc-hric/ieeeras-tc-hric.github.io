@@ -32,7 +32,7 @@ The IEEE RAS TC on Human-Robot Interaction and Collaboration is led by a team of
 
     Università degli Studi di Firenze
 
-    [Biomedical&Robotic Lab BMR](https://www.abrlab.unifi.it)
+    [Biomedical&Robotic Lab (BMR Lab)](https://www.abrlab.unifi.it)
 
     [:material-email: laura.fiorini@unifi.it](mailto:laura.fiorini@unifi.it)
 
