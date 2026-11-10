@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{#
+  Site-wide <head> additions: Open Graph / Twitter Card tags so links shared
+  on LinkedIn, X, Slack, WhatsApp, etc. show a proper preview card.
+#}
+{% block extrahead %}
+  {{ super() }}
+  {% set og_title = config.site_name if page.is_homepage else (page.title ~ " · TC HRI&C") %}
+  {% set og_desc = page.meta.description if page.meta and page.meta.description else config.site_description %}
+  {% set og_image = config.site_url ~ "assets/og-image.png" %}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ config.site_name | e }}">
+  <meta property="og:title" content="{{ og_title | e }}">
+  <meta property="og:description" content="{{ og_desc | trim | e }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <meta property="og:image" content="{{ og_image | e }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="IEEE RAS TC on Human-Robot Interaction and Collaboration logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ og_title | e }}">
+  <meta name="twitter:description" content="{{ og_desc | trim | e }}">
+  <meta name="twitter:image" content="{{ og_image | e }}">
+{% endblock %}
+
+{#
+  Homepage-only "global community" banner with a Flag Counter widget.
+  It renders only when `extra.flag_counter` is set in mkdocs.yml.
+#}
+{% block content %}
+  {{ super() }}
+  {% set fc = config.extra.flag_counter %}
+  {% set fc_srv = config.extra.flag_counter_server or "s01" %}
+  {% if page.is_homepage and fc %}
+  <section class="hric-visitors">
+    <h2 id="global-community">A global community</h2>
+    <p>
+      Human-robot interaction and collaboration is studied in labs, hospitals
+      and factories all over the world. Here's where visitors to this site
+      come from.
+    </p>
+    <a class="hric-visitors-widget" href="https://info.flagcounter.com/{{ fc }}"
+       target="_blank" rel="noopener" title="Visitor statistics by country">
+      <img src="https://{{ fc_srv }}.flagcounter.com/count2/{{ fc }}/bg_FFFFFF/txt_0A2540/border_BE3455/columns_4/maxflags_12/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
+           alt="Visitors to the TC HRI&amp;C website by country">
+    </a>
+  </section>
+  {% endif %}
+{% endblock %}

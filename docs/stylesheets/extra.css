@@ -167,3 +167,44 @@
 .md-typeset .hric-people strong {
   font-size: 1.05rem;
 }
+
+/* Homepage "A global community" visitor banner (see overrides/main.html) */
+.md-typeset .hric-visitors {
+  margin-top: 2.5rem;
+  padding: 1.75rem 1rem 2rem;
+  text-align: center;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .hric-visitors h2 {
+  margin-top: 0;
+}
+
+.md-typeset .hric-visitors p {
+  max-width: 34rem;
+  margin: 0 auto 1.25rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hric-visitors-widget {
+  display: inline-block;
+  max-width: 100%;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: border-color 120ms ease, transform 120ms ease;
+}
+
+.md-typeset .hric-visitors-widget:hover {
+  border-color: var(--md-accent-fg-color);
+  transform: translateY(-1px);
+  text-decoration: none !important;
+}
+
+.md-typeset .hric-visitors-widget img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
