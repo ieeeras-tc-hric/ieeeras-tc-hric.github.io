@@ -32,6 +32,8 @@ All pages live in `docs/` as plain Markdown:
 
 Site-wide settings (title, nav, theme palette, footer social icons) live in `mkdocs.yml`. Brand tweaks live in `docs/stylesheets/extra.css`.
 
+Template additions live in `overrides/main.html`: social-preview meta tags (using `docs/assets/og-image.png`) and the homepage visitor banner. The banner appears only when `extra.flag_counter` in `mkdocs.yml` is set to a [Flag Counter](https://flagcounter.com) code.
+
 ## Deployment
 
 A push to `main` triggers `.github/workflows/deploy.yml`, which runs `mkdocs gh-deploy` and publishes to the `gh-pages` branch.
@@ -52,6 +54,7 @@ After the first successful workflow run:
 ├── mkdocs.yml                  # site config (title, nav, theme)
 ├── requirements.txt            # mkdocs-material pin
 ├── .github/workflows/deploy.yml
+├── overrides/main.html         # meta tags + homepage visitor banner
 ├── docs/
 │   ├── index.md  seminars.md  members.md  news.md  resources.md  social.md
 │   ├── assets/                 # logo + favicon

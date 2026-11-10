@@ -6,6 +6,7 @@ site_url: https://ieeeras-tc-hric.github.io/
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/logo.svg
   favicon: assets/favicon.png
   font:
@@ -54,6 +55,13 @@ extra_css:
   - stylesheets/extra.css
 
 extra:
+  # Flag Counter code for the homepage "A global community" banner.
+  # Create one (free, no account) at https://flagcounter.com and paste the
+  # code and image server from the generated URL, e.g. for
+  # https://s05.flagcounter.com/count2/CJME/... use "CJME" and "s05".
+  # Leave flag_counter empty to hide the banner.
+  flag_counter: "CJME"
+  flag_counter_server: "s05"
   social:
     - icon: fontawesome/brands/x-twitter
       link: https://x.com/IeeeS40766
